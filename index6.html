@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        #one{
+            display:none ;
+            background-color: aqua;
+            width:80px ;
+            height:80px;
+        }
+        #two{
+            display:none ;
+            background-color:cadetblue;
+            width:80px ;
+            height:80px;
+        }
+        #three{
+            display:none ;
+            background-color:cornflowerblue;
+            width:80px ;
+            height:80px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nisi?</p>
+    <!-- <button id="btn1">fadeIn</button>
+    <button id="btn2">fadeOut</button> -->
+    <button id="btn3">toggle fade-in/fade-out</button>
+    <div id="one"></div>
+    <br>
+    <div id="two"></div>
+    <br>
+    <div id="three"></div>
+    <script>
+        $(document).ready(function(){
+         $('#btn3').click(function(){
+        //  $('#one').fadeIn();   
+        //  $('#two').fadeIn('slow');
+        //  $('#three').fadeIn(3000);
+
+        //  });
+        //  $('#btn2').click(function() {
+        //  $('#one').fadeOut();   
+        //  $('#two').fadeOut('slow');
+        //  $('#three').fadeOut(3000);
+        $('#one').fadeToggle();
+        $('#two').fadeToggle("slow");
+        $('#three').fadeToggle(5000);  
+
+
+
+         });
+            
+        })
+
+
+    </script>
+
+    
+</body>
+</html>

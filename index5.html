@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+            background-color: aqua;
+        }
+        
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, porro.</p>
+    <script>
+        MouseEvent
+        $(document).ready(function(){
+            $('p').mouseenter(function(){
+             $('p').css({"background-color":"red","color":"white","font-size":"36px" });
+
+            });
+            $('p').mouseleave(function(){
+             $('p').css({"background-color":"white"});
+
+            });
+            $('p').mouseup(function(){
+             $('p').css({"background-color":"green"});
+
+            });
+            $('p').mouseout(function(){
+             $('p').css({"background-color":"blueviolet"});
+
+            });
+
+
+        })
+
+    </script>
+
+
+    
+</body>
+</html>
